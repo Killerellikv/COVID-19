@@ -1,0 +1,11 @@
+{
+  // Configuration Cloudflare Workers (fichiers statiques uniquement, aucun code serveur).
+  // Déploiement : `npm run deploy` avec le compte connecté via `npx wrangler login`.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "permis-b-belgique",
+  "compatibility_date": "2026-09-15",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}

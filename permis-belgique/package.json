@@ -1,0 +1,21 @@
+{
+  "name": "permis-b-belgique",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Application web d'entraînement à l'examen théorique du permis B en Belgique (PWA, hors connexion).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/stamp-sw.mjs",
+    "test": "node scripts/check-questions.mjs && node scripts/stamp-sw.mjs --check",
+    "dev": "wrangler dev",
+    "deploy": "npm run build && npm test && wrangler deploy",
+    "deploy:pages": "npm run build && npm test && wrangler pages deploy public --project-name=permis-b-belgique",
+    "whoami": "wrangler whoami"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "4.140.0"
+  }
+}

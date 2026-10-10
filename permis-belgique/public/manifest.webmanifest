@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "Permis B Belgique",
+  "short_name": "Permis B",
+  "description": "Entraînement à l'examen théorique du permis B en Belgique : examens blancs de 50 questions, entraînement par thème et correction expliquée.",
+  "lang": "fr-BE",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#EDF0F4",
+  "theme_color": "#1D5AA8",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "/screenshots/mobile.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Une question d'examen" },
+    { "src": "/screenshots/desktop.png", "sizes": "1280x800", "type": "image/png", "form_factor": "wide", "label": "Accueil et thèmes" }
+  ],
+  "shortcuts": [
+    { "name": "Examen blanc", "short_name": "Examen", "url": "/?start=exam", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Entraînement rapide", "short_name": "20 questions", "url": "/?start=quick", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Revoir mes erreurs", "short_name": "Erreurs", "url": "/?start=errors", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
